@@ -1,0 +1,5 @@
+# 실습4 - 나이 점수 개수 변수로 표현
+age = 24           # 숫자 변수  
+label = "나이"     # 설명용 글자 변수
+print(label)
+print(age)

@@ -1,0 +1,5 @@
+# 실습1 - 변수 만들고 출력하기
+temp = 25         # temp라는 변수에 숫자 25를 저장
+print(temp)
+name = "센서A"    # name이라는 변수에 글자 센서A를 저장
+print(name)

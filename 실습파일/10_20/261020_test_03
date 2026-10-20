@@ -1,0 +1,6 @@
+# 실습3 - 직접 변수 만들어 출력하기
+my_number = 9
+print(my_number)
+
+mood = "calm"
+print(mood)

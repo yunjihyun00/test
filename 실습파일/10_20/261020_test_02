@@ -1,0 +1,4 @@
+# 실습2 - 앞 코드 수정하기
+temperature = 25
+temperature = 30
+print(temperature)

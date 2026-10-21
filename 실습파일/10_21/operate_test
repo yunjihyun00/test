@@ -1,0 +1,104 @@
+# 실습1 - 사칙연산 계산기
+print("실습1")
+
+a = 17
+b = 5
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a ** b)
+
+
+# 실습2 - 평균과 도형 계산
+print("---------------")
+print("실습2")
+
+score1 = 80
+score2 = 90
+score3 = 100
+
+average = (score1 + score2 + score3) / 3
+print("평균 점수:", average)
+
+side = 5
+area = side * side
+print("정사각형의 넓이:", area)
+
+length = 4
+width = 3
+height = 2
+
+volume = length * width * height
+print("직육면체의 부피:", volume)
+
+
+# 실습3 - 비교 연산 출력
+print("---------------")
+print("실습3")
+
+print(7 == 7) , print(7 != 7)
+print(17 > 7) , print(17 < 7)
+print(17 >= 7) , print(17 <= 7)
+
+
+# 실습4 - 정상범위와 다중센서 판정
+print("---------------")
+print("실습4")
+
+temperature = 85
+temp_normal = temperature >= 60 and temperature <= 90
+
+pressure = 5
+pressure_normal = pressure >= 3 and pressure <= 7
+
+print(temp_normal and pressure_normal)  # True
+
+
+# 실습5 - 복합 할당으로 재고 추적
+print("---------------")
+print("실습5")
+
+stock = 100
+print("초기 재고:", stock)
+
+stock += 50
+print("입고 후 재고:", stock)
+
+stock -= 30
+print("출고 후 재고:", stock)
+
+stock += 5
+print("반품 후 재고:", stock)
+
+
+# 실습6 - 설비 지표 계산
+print("---------------")
+print("실습6")
+
+total = 500
+defect = 23
+
+defect_rate = defect / total * 100
+print("불량률:", defect_rate, "%")
+
+operating_time = 21
+total_time = 24
+
+operating_rate = operating_time / total_time * 100
+print("가동률:", operating_rate, "%")
+
+
+# 실습7 - 시간 변환과 상자 포장
+print("---------------")
+print("실습7")
+
+total_minutes = 500
+
+hours = total_minutes // 60
+minutes = total_minutes % 60
+
+print("총 시간:", hours, "시간", minutes, "분")

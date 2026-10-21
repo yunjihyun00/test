@@ -1,0 +1,40 @@
+
+# 실습1 - 여러 줄 문자열 만들기
+print("---------------")
+print("실습1")
+
+check_list = """가동 점검표
+1. 온도 확인
+2. 압력 확인"""
+print(check_list)
+
+check_list = "가동 점검표\n1.\t온도 확인\n2.\t압력 확인"
+print(check_list)
+
+
+# 실습2 - 설비 라벨 이어 붙이기
+print("---------------")
+print("실습2")
+
+device_code = "PUMP_A"
+status = "정상"
+check_date = "2026-10-21"
+
+label = device_code + "/" + status + "/" + check_date
+print(label)
+
+# 실습3 - 설비 정보 카드 만들기
+print("---------------")
+print("실습3")
+
+device_code = "PUMP_A"
+status = "정상"
+operating_time = 21
+check_date = "2026-10-21"
+
+print(
+    "설비: " + device_code +
+    "\n상태: " + status +
+    "\n가동: " + str(operating_time) + "시간" +
+    "\n점검: " + check_date
+)

@@ -1,0 +1,46 @@
+
+# 실습1 - 길이 재기
+print("---------------")
+print("실습1")
+
+print(len('01012345678'))
+
+
+# 실습2 - 포함 확인하기
+print("---------------")
+print("실습2")
+
+print('고장' in '설비 고장 발생')
+print('정상' in '설비 고장 발생')
+
+
+# 실습3 - 개수 세기
+print("---------------")
+print("실습3")
+
+print('sensor-01-temp'.count('-'))
+
+
+# 실습4 - 위치 찾기
+print("---------------")
+print("실습4")
+
+print('temp_2024'.find('_'))
+print('temp_2024'.find('A'))
+
+
+# 실습5 - 시작과 끝 확인하기
+print("---------------")
+print("실습5")
+
+print('sensor_log.csv'.startswith('sensor'))
+print('sensor_log.csv'.endswith('csv'))
+
+
+# 실습6 - 대소문자 구분 비교하기
+print("---------------")
+print("실습6")
+
+status = 'WARNING'
+print(status == 'WARNING')
+print(status == 'warning')

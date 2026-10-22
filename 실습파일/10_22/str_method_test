@@ -1,0 +1,89 @@
+
+# 실습1 - 대문자로 바꾸기
+print("---------------")
+print("실습1")
+
+word = 'ready'
+print(word.upper())
+
+
+# 실습2 - 소문자로 바꾸기
+print("---------------")
+print("실습2")
+
+word = 'WARNING'
+print(word.lower())
+
+
+# 실습3 - 단어 첫 글자 대문자로 만들기
+print("---------------")
+print("실습3")
+
+print('kim chul soo'.title())
+
+
+# 실습4 - 대소문자 무시하고 비교하기
+print("---------------")
+print("실습4")
+
+print('Fault' == 'FAULT')
+print('Fault'.lower() == 'FAULT'.lower())
+
+
+# 실습5 - 대문자인지 소문자인지 검사하기
+print("---------------")
+print("실습5")
+
+print('ABC'.isupper(), 'abc'.islower(), 'Abc'.isupper())
+
+
+# 실습6 - 파일명 규칙 한 번에 점검하기
+print("---------------")
+print("실습6")
+
+word = 'Sensor_LOG.CSV'
+print(word.lower().startswith('sensor'))
+print(word.lower().endswith('csv')) 
+
+
+# 실습7 - 앞뒤 공백 제거하기
+print("---------------")
+print("실습7")
+
+raw = ' 가동중 '
+print('[' + raw.strip() + ']') 
+
+
+# 실습8 - 한쪽 공백만 제거하기
+print("---------------")
+print("실습8")
+
+raw = ' 대기 '
+print('[' + raw.lstrip() + ']') , print('[' + raw.rstrip() + ']') 
+
+
+# 실습9 - 특정 문자 제거하기
+print("---------------")
+print("실습9")
+
+a = '***경고***'
+print(a.strip('*'))
+
+
+# 실습10 - 메서드 이어 붙이기
+print("---------------")
+print("실습10")
+
+clean = '  WARNING  '.strip().lower()
+print(clean)
+
+
+# 실습11 - 결과를 변수에 다시 저장하기
+print("---------------")
+print("실습11")
+
+word = '  경보  '
+word.strip()
+print(word)
+word = word.strip()
+print(word)

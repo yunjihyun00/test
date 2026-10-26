@@ -25,3 +25,37 @@ print('---------------')
 print("실습4")
 
 print('a,b,c,d'.split(',',1))
+
+
+# 실습5 - 리스트 합치기
+print('---------------')
+print("실습5")
+
+print('-'.join(['2025', '01', '15']))
+
+
+
+# 실습6 - sep으로 이어 출력하기
+print('---------------')
+print("실습6")
+
+print('2025','01','15',sep='-')
+print('2025','01','15',sep=', ')
+
+
+# 실습7 - 구분자 통째로 바꾸기
+print('---------------')
+print("실습7")
+
+raw = '2025/01/15'
+p = raw.split('/')
+print('-'.join(p))
+
+
+# 실습8 - CSV 한 줄에서 값 꺼내 정리하기
+print('---------------')
+print("실습8")
+
+data = '1, NORMAL ,25.3'
+result = data.split(',')[1].strip().lower()
+print(result)

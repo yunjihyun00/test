@@ -1,0 +1,40 @@
+
+# 실습1 - range로 숫자 흐름 출력하기
+# print("---------------")
+# print("실습1")
+
+
+# n = int(input("끝 숫자 N을 입력하세요: "))
+# for i in range(1, n+1):
+#     print(i)
+# print("---------------")
+# for i in range(2, n+1, 2):
+#     print(i)
+# print("---------------")
+# for i in range(5, 0, -1):
+#     print(i)
+
+
+# 실습2 - 반복으로 1부터 N까지 합계 구하기
+# n = int(input("N을 입력하세요: "))
+# total = 0
+# for i in range(1, n+1):
+#     total += i
+# print("합계: ", total)
+
+
+# 실습3 - 중첩 반복으로 구구단 출력하기
+# for dan in range(2, 10):
+#     for su in range(1, 10):
+#         print(f'{dan} x {su} = {dan * su}')
+#     print("-------")
+
+
+# 실습4 - 기준을 초과하는 값 개수 세기
+n = int(input("측정 횟수 입력: "))
+count = 0
+for i in range(n):
+    value = float(input("측정값 입력: "))
+    if value > 80:
+        count += 1
+print("초과개수:", count)

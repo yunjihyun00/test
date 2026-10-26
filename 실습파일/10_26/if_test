@@ -1,0 +1,58 @@
+
+# 실습1 - 조건 하나로 나이 판정하기
+print("---------------")
+print("실습1")
+
+age = int(input("나이를 입력하세요: "))
+if age >= 19:
+    print("성인입니다")
+else:
+    print("미성년자입니다")
+
+
+# 실습2 - 여러 갈래로 점수 등급 판정하기
+score = int(input("점수를 입력하세요: "))
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+else:
+    print("F")
+
+
+# 실습3 - 설비 온도 상태 판정하기
+temp = int(input("온도를 입력하세요: "))
+if temp > 80:
+    print("위험")
+elif temp > 60:
+    print("주의")
+else:
+    print("정상")
+
+
+# 실습4 - 두 조건을 모두 만족하는지 검증하기
+correct_id = "admin"
+correct_pw = "1234"
+user_id = input("아이디 입력: ")
+user_pw = input("비밀번호 입력: ")
+if user_id == correct_id and user_pw == correct_pw:
+    print("로그인 성공")
+else:
+    print("로그인 실패")
+
+
+# 실습5 - 세 값으로 설비 종합 상태 판정하기
+temperature = float(input("온도 입력: "))
+vibration = float(input("진동 입력: "))
+current = float(input("전류 입력: "))
+
+if temperature > 80 or vibration > 4.0:
+    print("위험: 즉시정지")
+elif current > 60 and temperature > 70:
+    print("주의: 부하점검")
+elif vibration > 2.5:
+    print("주의: 진동관찰")
+else:
+    print("정상")

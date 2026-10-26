@@ -1,0 +1,115 @@
+
+# 실습1 - 나만의 데이터 리스트 만들기
+print("---------------")
+print("실습1")
+
+temperatures = [25, 26, 24, 27, 26]
+print(temperatures)
+print(len(temperatures))
+
+empty_list = []
+print(empty_list)
+print(len(empty_list))
+
+
+# 실습2 - 인덱스로 값 꺼내기
+print("---------------")
+print("실습2")
+
+temperatures = [25, 26, 27, 28, 29, 30]
+print(temperatures[0])
+print(temperatures[2])
+print(temperatures[-1])
+
+
+# 실습3 - 인덱스로 꺼낸 값 계산하기
+print("---------------")
+print("실습3")
+
+production = [100, 110, 120, 115, 122, 122]
+
+first = production[0]
+last = production[-1]
+
+print(first + last)
+print((first + last) / 2)
+
+
+# 실습4 - 슬라이싱으로 구간 자르기
+print("---------------")
+print("실습4")
+
+temperatures = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+print(temperatures[:3])
+print(temperatures[-3:])
+
+print(len(temperatures[:3]))
+print(len(temperatures[-3:]))
+
+
+# 실습5 - 데이터를 두 구간으로 나누기
+print("---------------")
+print("실습5")
+
+age = [3, 4, 5, 6 ,5, 4, 6, 7, 8, 7, 5, 3]
+first = age[:6]
+second = age[-6:]
+
+print(first)
+print(second)
+print(len(first))
+print(len(second))
+
+
+# 실습6 - 값 찾아 바꾸기
+print("---------------")
+print("실습6")
+
+temps = [25, 26, 240, 28, 27]
+print(240 in temps)
+temps[2] = 24
+print(temps)
+print(240 in temps)
+
+
+
+# 실습7 - 데이터를 두 구간으로 나누기
+print("---------------")
+print("실습7")
+
+data = []
+data.append(30)
+data.insert(0, 28)
+data.extend([31, 32])
+print(data)
+
+
+# 실습8 - 잘못된 값 제거하기
+print("---------------")
+print("실습8")
+
+temps = [25, 26, 999, 24, 28, 26]
+temps.remove(999)
+print(temps)
+
+value = temps.pop(1)
+print(f'꺼낸값 {value}')
+
+del temps[0]
+print(temps)
+
+
+# 실습9 - 정렬하고 탐색하기
+print("---------------")
+print("실습9")
+
+temps = [26, 24, 30, 22, 28, 24, 27]
+
+temps.sort()
+print(temps)
+
+temps.reverse()
+print(temps)
+
+print(temps.count(24))
+print(temps.index(24))

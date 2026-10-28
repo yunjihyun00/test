@@ -1,0 +1,40 @@
+
+# 실습1 - 센서를 튜플로 묶고 꺼내기
+# sensor = ("모터온도", 78)
+
+# print(sensor)
+# print(sensor[0])
+# print(sensor[1])
+
+# name, value = sensor
+# print(name, value)
+
+
+# 실습2 - 튜플 리스트를 반복 처리하기
+# sensors = [
+#     ("모터온도", 78),
+#     ("회전속도", 95),
+#     ("펌프압력", 92),
+#     ("배터리전압", 85)
+# ]
+
+# for name, value in sensors:
+#     print(name, value)
+
+#     if value > 90:
+#         print(name, "경고")
+
+
+# 실습3 - 중첩 튜플로 센서 위치 관리하기
+sensors = [
+    ("모터온도", 78, (3, 4)),
+    ("회전속도", 95, (7, 2)),
+    ("펌프압력", 92, (5, 6)),
+    ("뱉터리전압", 85, (8, 3))
+]
+
+for name, value, (x, y) in sensors:
+    print(name, "위치:", (x, y))
+
+    if x <= 5:
+        print("x<=5 센서:", name)

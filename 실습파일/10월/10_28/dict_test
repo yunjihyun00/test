@@ -1,0 +1,93 @@
+
+# 실습1 - 딕셔너리 만들고 다루기
+# sensors = {
+#     'S01': 78,
+#     'S02': 85,
+#     'S03': 92
+# }
+# print(sensors['S01'])
+# sensors['S04'] = 65
+# sensors['S02'] = 80
+# print("추가·수정된 딕셔너리")
+# print(sensors)
+# print(sensors.get('S05', 0))
+# print('S01' in sensors)
+
+
+# # 실습2 - update로 여러 값 한 번에 갱신하기
+# d = {"S01": 78, "S02": 85, "S03": 92}
+# d.update({"S02": 80, "S04": 65})
+# print("갱신된 딕셔너리")
+# print(d)
+
+# del d["S01"]
+# del d["S03"]
+# print("센서수:", len(d))
+
+
+# # 실습3 - 딕셔너리로 통계 내기
+# d = {"온도": 78, "습도": 60, "압력": 95}
+# avg = sum(d.values()) / len(d)
+# print("평균:", round(avg, 1))
+# max_sensor = ""
+# max_value = 0
+
+# for name, value in d.items():
+#     if value > max_value:
+#         max_value = value
+#         max_sensor = name
+
+# print("최댓값 센서:", max_sensor, max_value)
+
+
+# # 실습4 - zip으로 센서명-값 매핑하기
+# names = ["온도", "진동", "압력"]
+# values = [78, 0.5, 95]
+# d = dict(zip(names, values))
+# print(d)
+# for name, value in d.items():
+#     print(name, value)
+
+
+# # 실습5 - 임계값으로 경고 센서 분류하기
+# d = {"온도": 85, "습도": 60, "압력": 95}
+# limit = {"온도": 80, "습도": 70, "압력": 100}
+# warning = []
+# for name, value in d.items():
+#     if value > limit[name]:
+#         warning.append(name)
+# print("경고센서:", warning)
+
+
+# # 실습6 - 중첩 딕셔너리로 설비 관리하기
+# d = {
+#     "1번펌프": {"압력": 80, "상태": "정상"},
+#     "2번펌프": {"압력": 95, "상태": "경고"},
+#     "3번펌프": {"압력": 70, "상태": "정상"}
+# }
+# print(d["2번펌프"]["압력"])
+# for name, info in d.items():
+#     if info["상태"] == "경고":
+#         print(name + " 점검 필요")
+
+
+# 실습7 - 표 데이터를 딕셔너리로 변환하기
+data = ["온도,78", "압력,95", "진동,0.5"]
+d = {}
+for row in data:
+    name, value = row.split(",")
+    d[name] = float(value)
+print(d)
+
+
+# 실습8 - 센서 데이터 통합 정리
+d = {"온도": 100, "압력": 91, "진동": 95}
+limit = {"온도": 90, "압력": 85, "진동": 100}
+avg = sum(d.values()) / len(d)
+print("평균:", avg)
+risk = set()
+
+for name, value in d.items():
+    if value > limit[name]:
+        risk.add(name)
+print("위험센서:", sorted(risk))
